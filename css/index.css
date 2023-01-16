@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img {
+  width: 50px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-cont{
+  background-color: gray;
+}
+
+nav{
+  text-align: left;
+  margin-left: 10px;
+}
+
+ul{
+  list-style: none;
+}
+
+.hamburger{
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: gray;
+  border-width: 1px;
+  text-align: center;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* IPADS */
+@media(min-width: 780px) and (max-width: 1024px){
+  
+  header{
+    flex-direction: row;
+  }
+}
+
+/* LARGE SCREEN */
+@media(min-width: 1025px){
+
+  header{
+    flex-direction: row;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  li{  
+  color: white;
+  padding: 10px 20px
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .product{
+    margin: 10px;
+  }
+
+  main{
+    display: flex;
+    flex-direction: row;
+  }
+.social_icon{
+  color: black;
+}
+}
